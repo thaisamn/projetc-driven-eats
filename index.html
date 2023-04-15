@@ -1,0 +1,205 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+  <link rel="stylesheet" href="estilo.css" />
+  <link rel="preconnect" href="https://fonts.googleapis.com" />
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+  <link
+    href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap"
+    rel="stylesheet"
+  />
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Projeto</title>
+  </head>
+
+  <body class="corpo">
+    <div class="cabecalho">
+      <h1 class="driveneats">DrivenEats</h1>
+      <span>Sua comida em 6 minutos</span>
+    </div>
+    <div class="cardapio">
+      <div class="categoria">Primeiro, seu prato</div>
+      <div id="pratoPrincipal" class="lista">
+        <div
+          id="p1"
+          onclick="selecionarProduto('pratoPrincipal',0)"
+          class="item"
+        >
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Frango Yin Yang</h4>
+          </div>
+          <div>
+            <p>Um pouco de batata, um pouco de salada</p>
+          </div>
+          <div class="preco">R$ 14,90</div>
+        </div>
+        <div
+          id="p2"
+          onclick="selecionarProduto('pratoPrincipal',1)"
+          class="item"
+        >
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Frango Yin Yang</h4>
+          </div>
+          <div>
+            <p>Um pouco de batata, um pouco de salada</p>
+          </div>
+          <div class="preco">R$ 14,90</div>
+        </div>
+
+        <div
+          id="p3"
+          onclick="selecionarProduto('pratoPrincipal',2)"
+          class="item"
+        >
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Frango Yin Yang</h4>
+          </div>
+          <div>
+            <p>Um pouco de batata, um pouco de salada</p>
+          </div>
+          <div class="preco">R$ 14,90</div>
+        </div>
+      </div>
+    </div>
+    <div class="cardapio">
+      <div class="categoria">Agora, sua bebida</div>
+      <div id="bebida" class="lista">
+        <div class="item" onclick="selecionarProduto('bebida',0)">
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Coquinha gelada</h4>
+          </div>
+          <div>
+            <p>Lata 350ml</p>
+          </div>
+          <div class="preco">R$ 4,90</div>
+        </div>
+
+        <div class="item" onclick="selecionarProduto('bebida',1)">
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Coquinha gelada</h4>
+          </div>
+          <div>
+            <p>Lata 350ml</p>
+          </div>
+          <div class="preco">R$ 4,90</div>
+        </div>
+
+        <div class="item" onclick="selecionarProduto('bebida',2)">
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Coquinha gelada</h4>
+          </div>
+          <div>
+            <p>Lata 350ml</p>
+          </div>
+          <div class="preco">R$ 4,90</div>
+        </div>
+      </div>
+    </div>
+    <div class="cardapio">
+      <div class="categoria">Por fim, sua sobremesa</div>
+      <div id="sobremesa" class="lista">
+        <div class="item" onclick="selecionarProduto('sobremesa',0)">
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Pudim</h4>
+          </div>
+          <div>
+            <p>Apenas pudim</p>
+          </div>
+          <div class="preco">R$ 7,90</div>
+        </div>
+
+        <div class="item" onclick="selecionarProduto('sobremesa',1)">
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Pudim</h4>
+          </div>
+          <div>
+            <p>Apenas pudim</p>
+          </div>
+          <div class="preco">R$ 7,90</div>
+        </div>
+
+        <div class="item" onclick="selecionarProduto('sobremesa',2)">
+          <div>
+            <img
+              sizes=""
+              src="https://img.freepik.com/fotos-gratis/variedade-plana-com-deliciosa-comida-brasileira_23-2148739179.jpg?w=2000"
+              alt=""
+            />
+          </div>
+          <div>
+            <h4>Pudim</h4>
+          </div>
+          <div>
+            <p>Apenas pudim</p>
+          </div>
+          <div class="preco">R$ 7,90</div>
+        </div>
+      </div>
+    </div>
+    <div class="rodape">
+      <button onclick="alert()" disabled>
+        Selecione os 3 itens para fechar o pedido
+      </button>
+    </div>
+    <script src="script.js"></script>
+  </body>
+</html>
