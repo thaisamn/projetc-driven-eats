@@ -51,3 +51,22 @@ function cancelar() {
    const resumo = document.getElementsByClassName('confirmacao');
    resumo[0].classList.add('escondido');
 }
+
+function enviarPedido(){
+   const produtos = Object.keys(produtos_selecionados).map(key => {
+      return produtos_selecionados[key];
+   });
+   let total = 0;
+
+   let resumo = 'Olá, gostaria de fazer o pedido:\n'
+   produtos.forEach(p => {
+      total += p.preco;
+      resumo += `- ${p.produto}\n`
+   })
+
+   resumo += `Total: R$${total.toFixed(2)}`
+
+
+   window.open(`https://wa.me/5511932291668?text=${encodeURIComponent(resumo)}`)
+   
+}

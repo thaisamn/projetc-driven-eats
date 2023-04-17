@@ -176,6 +176,7 @@ button:disabled {
 .resumo > div > a {
   font-size: 20px;
   font-weight: 700;
+  cursor: pointer;
 }
 
 .resumo > ul {
