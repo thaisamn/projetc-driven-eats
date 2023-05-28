@@ -1,217 +1,180 @@
 <!DOCTYPE html>
 <html lang="pt-br">
-  <link rel="stylesheet" href="estilo.css" />
-  <link rel="preconnect" href="https://fonts.googleapis.com" />
-  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
-  <link
-    href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap"
-    rel="stylesheet"
-  />
-  <head>
-    <meta charset="UTF-8" />
-    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
-    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Projeto</title>
-  </head>
+<link rel="stylesheet" href="estilo.css" />
+<link rel="preconnect" href="https://fonts.googleapis.com" />
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+<link href="https://fonts.googleapis.com/css2?family=Righteous&family=Roboto:wght@300;400;500;700&display=swap"
+  rel="stylesheet" />
 
-  <body class="corpo">
-    <div class="cabecalho">
-      <h1 class="driveneats">DrivenEats</h1>
-      <span>Sua comida em 6 minutos</span>
-    </div>
-    <div class="cardapio">
-      <div class="categoria">Primeiro, seu prato</div>
-      <div id="pratoPrincipal" class="lista">
-        <div
-          id="p1"
-          onclick="selecionarProduto('pratoPrincipal',0, 'Frango Yin Yang', 14.90)"
-          class="item"
-        >
-          <div>
-            <img sizes="" src="frango.jpeg" alt="" />
-          </div>
-          <div>
-            <h4>Frango Yin Yang</h4>
-          </div>
-          <div>
-            <p>Um pouco de batata, um pouco de salada</p>
-          </div>
-          <div class="preco">R$ 14,90</div>
-        </div>
-        <div
-          id="p2"
-          onclick="selecionarProduto('pratoPrincipal',1, 'Espaguete ao sugo', 27.90)"
-          class="item"
-        >
-          <div>
-            <img
-              sizes=""
-              src="https://img.freepik.com/free-photo/closeup-shot-pasta-with-vegetables-ingredients-white-table_181624-46356.jpg?w=1800&t=st=1681596174~exp=1681596774~hmac=ef0c609c5d66621bf42321b85023f386c13975c6a6110dc3ae2c4251ec364917"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4>Espaguete</h4>
-          </div>
-          <div>
-            <p>Espaguete ao sugo com legumes</p>
-          </div>
-          <div class="preco">R$ 27,90</div>
-        </div>
+<head>
+  <meta charset="UTF-8" />
+  <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Projeto</title>
+</head>
 
-        <div
-          id="p3"
-          onclick="selecionarProduto('pratoPrincipal',2, 'Churrasco', 69.00)"
-          class="item"
-        >
-          <div>
-            <img
-              sizes=""
-              src="https://img.freepik.com/free-photo/fried-steak-pieces-wooden-board-garlic_140725-4719.jpg?w=1480&t=st=1681596183~exp=1681596783~hmac=66fc0df71699f01ac6cc0f37ff334cc6843c50c9936fea057ff331c3b3f93f06"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4>Churrasco</h4>
-          </div>
-          <div>
-            <p>Os melhores cortes + vinagrete e farofa</p>
-          </div>
-          <div class="preco">R$ 69,00</div>
-        </div>
-      </div>
-    </div>
-    <div class="cardapio">
-      <div class="categoria">Agora, sua bebida</div>
-      <div id="bebida" class="lista">
-        <div
-          class="item"
-          onclick="selecionarProduto('bebida',0, 'Coquinha gelada', 4.90)"
-        >
-          <div>
-            <img sizes="" src="coca.jpeg" alt="" />
-          </div>
-          <div>
-            <h4>Coquinha gelada</h4>
-          </div>
-          <div>
-            <p>Lata 350ml</p>
-          </div>
-          <div class="preco">R$ 4,90</div>
-        </div>
-
-        <div
-          class="item"
-          onclick="selecionarProduto('bebida',1, 'Suco de laranja', 12)"
-        >
-          <div>
-            <img
-              sizes=""
-              src="https://img.freepik.com/free-photo/fresh-cold-orange-juice_144627-11208.jpg?w=740&t=st=1681596232~exp=1681596832~hmac=7474e2de242ced30beda7511ed1c223331232f1911fdef086107de40f259625d"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4>Suco de laranja</h4>
-          </div>
-          <div>
-            <p>Copo 500ml</p>
-          </div>
-          <div class="preco">R$ 12,00</div>
-        </div>
-        <div class="item" onclick="selecionarProduto('bebida',2, 'Guarana', 8)">
-          <div>
-            <img
-              sizes=""
-              src="https://img.freepik.com/premium-photo/guarana-soda-typical-brazilian-soft-drink-cup-with-ice_92534-4018.jpg?w=1380"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4>Guarana gelado</h4>
-          </div>
-          <div>
-            <p>Garrafa 1l</p>
-          </div>
-          <div class="preco">R$ 8,00</div>
-        </div>
-      </div>
-    </div>
-    <div class="cardapio">
-      <div class="categoria">Por fim, sua sobremesa</div>
-      <div id="sobremesa" class="lista">
-        <div
-          class="item"
-          onclick="selecionarProduto('sobremesa',0,'Pudim', 7.90 )"
-        >
-          <div>
-            <img sizes="" src="pudim.jpeg" alt="" />
-          </div>
-          <div>
-            <h4>Pudim</h4>
-          </div>
-          <div>
-            <p>Apenas pudim</p>
-          </div>
-          <div class="preco">R$ 7,90</div>
-        </div>
-
-        <div
-          class="item"
-          onclick="selecionarProduto('sobremesa',1, 'Torta de limão', 8.90)"
-        >
-          <div>
-            <img
-              sizes=""
-              src="https://img.freepik.com/free-photo/lime-cheesecake-garnished-with-lime-slices-blackberry-black-currant-pistachios_140725-1391.jpg?w=900&t=st=1681596265~exp=1681596865~hmac=4d27e7657cf91fa6fe072d078912d13fc29e2289bbbf7aa08bfdf3f5c9ba06ef"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4>Torta de limão</h4>
-          </div>
-          <div>
-            <p>Apenas uma fatia de torta</p>
-          </div>
-          <div class="preco">R$ 8,90</div>
-        </div>
-
-        <div
-          class="item"
-          onclick="selecionarProduto('sobremesa',2,'Banoffe', 10.90)"
-        >
-          <div>
-            <img
-              sizes=""
-              src="https://img.freepik.com/free-photo/banoffee-cake-plate_1339-7281.jpg?w=1800&t=st=1681596252~exp=1681596852~hmac=f292f7826cedf402cfa9f43e7f51d443826a55552a5f581cc85164e0aed7e696"
-              alt=""
-            />
-          </div>
-          <div>
-            <h4>Banoffe</h4>
-          </div>
-          <div>
-            <p>Apenas uma fatia de Banoffe</p>
-          </div>
-          <div class="preco">R$ 10,90</div>
-        </div>
-      </div>
-    </div>
-    <div class="rodape">
-      <button onclick="fecharPedido()" disabled>
-        Selecione os 3 itens para fechar o pedido
-      </button>
-    </div>
-    <div class="confirmacao escondido">
-      <div class="resumo">
-        <p><strong>Confirme seu pedido</strong></p>
-        <ul></ul>
+<body class="corpo">
+  <div class="cabecalho">
+    <h1 class="driveneats">DrivenEats</h1>
+    <span>Sua comida em 6 minutos</span>
+  </div>
+  <div class="cardapio">
+    <div class="categoria">Primeiro, seu prato</div>
+    <div id="pratoPrincipal" class="lista">
+      <div id="p1" onclick="selecionarProduto('pratoPrincipal',0, 'Frango Yin Yang', 14.90)" class="item"
+        data-test="dish">
         <div>
-          <button onclick="enviarPedido()">Tudo Certo, pode pedir!</button>
-          <a onclick="cancelar()"> Cancelar </a>
+          <img sizes="" src="frango.jpeg" alt="" />
         </div>
+        <div>
+          <h4 data-test="item-name">Frango Yin Yang</h4>
+        </div>
+        <div>
+          <p>Um pouco de batata, um pouco de salada</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 14,90</div>
+      </div>
+      <div id="p2" onclick="selecionarProduto('pratoPrincipal',1, 'Espaguete ao sugo', 27.90)" class="item"
+        data-test="dish">
+        <div>
+          <img sizes=""
+            src="https://img.freepik.com/free-photo/closeup-shot-pasta-with-vegetables-ingredients-white-table_181624-46356.jpg?w=1800&t=st=1681596174~exp=1681596774~hmac=ef0c609c5d66621bf42321b85023f386c13975c6a6110dc3ae2c4251ec364917"
+            alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Espaguete</h4>
+        </div>
+        <div>
+          <p>Espaguete ao sugo com legumes</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 27,90</div>
+      </div>
+
+      <div id="p3" onclick="selecionarProduto('pratoPrincipal',2, 'Churrasco', 69.00)" class="item" data-test="dish">
+        <div>
+          <img sizes=""
+            src="https://img.freepik.com/free-photo/fried-steak-pieces-wooden-board-garlic_140725-4719.jpg?w=1480&t=st=1681596183~exp=1681596783~hmac=66fc0df71699f01ac6cc0f37ff334cc6843c50c9936fea057ff331c3b3f93f06"
+            alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Churrasco</h4>
+        </div>
+        <div>
+          <p>Os melhores cortes + vinagrete e farofa</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 69,00</div>
       </div>
     </div>
-    <script src="script.js"></script>
-  </body>
+  </div>
+  <div class="cardapio">
+    <div class="categoria">Agora, sua bebida</div>
+    <div id="bebida" class="lista">
+      <div class="item" data-test="drink" onclick="selecionarProduto('bebida',0, 'Coquinha gelada', 4.90)">
+        <div>
+          <img sizes="" src="coca.jpeg" alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Coquinha gelada</h4>
+        </div>
+        <div>
+          <p>Lata 350ml</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 4,90</div>
+      </div>
+
+      <div class="item" data-test="drink" onclick="selecionarProduto('bebida',1, 'Suco de laranja', 12)">
+        <div>
+          <img sizes=""
+            src="https://img.freepik.com/free-photo/fresh-cold-orange-juice_144627-11208.jpg?w=740&t=st=1681596232~exp=1681596832~hmac=7474e2de242ced30beda7511ed1c223331232f1911fdef086107de40f259625d"
+            alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Suco de laranja</h4>
+        </div>
+        <div>
+          <p>Copo 500ml</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 12,00</div>
+      </div>
+      <div class="item" data-test="drink" onclick="selecionarProduto('bebida',2, 'Guarana', 8)">
+        <div>
+          <img sizes=""
+            src="https://img.freepik.com/premium-photo/guarana-soda-typical-brazilian-soft-drink-cup-with-ice_92534-4018.jpg?w=1380"
+            alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Guarana gelado</h4>
+        </div>
+        <div>
+          <p>Garrafa 1l</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 8,00</div>
+      </div>
+    </div>
+  </div>
+  <div class="cardapio">
+    <div class="categoria">Por fim, sua sobremesa</div>
+    <div id="sobremesa" class="lista">
+      <div class="item" data-test="dessert" onclick="selecionarProduto('sobremesa',0,'Pudim', 7.90 )">
+        <div>
+          <img sizes="" src="pudim.jpeg" alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Pudim</h4>
+        </div>
+        <div>
+          <p>Apenas pudim</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 7,90</div>
+      </div>
+
+      <div class="item" data-test="dessert" onclick="selecionarProduto('sobremesa',1, 'Torta de limão', 8.90)">
+        <div>
+          <img sizes=""
+            src="https://img.freepik.com/free-photo/lime-cheesecake-garnished-with-lime-slices-blackberry-black-currant-pistachios_140725-1391.jpg?w=900&t=st=1681596265~exp=1681596865~hmac=4d27e7657cf91fa6fe072d078912d13fc29e2289bbbf7aa08bfdf3f5c9ba06ef"
+            alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Torta de limão</h4>
+        </div>
+        <div>
+          <p>Apenas uma fatia de torta</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 8,90</div>
+      </div>
+
+      <div class="item" data-test="dessert" onclick="selecionarProduto('sobremesa',2,'Banoffe', 10.90)">
+        <div>
+          <img sizes=""
+            src="https://img.freepik.com/free-photo/banoffee-cake-plate_1339-7281.jpg?w=1800&t=st=1681596252~exp=1681596852~hmac=f292f7826cedf402cfa9f43e7f51d443826a55552a5f581cc85164e0aed7e696"
+            alt="" />
+        </div>
+        <div>
+          <h4 data-test="item-name">Banoffe</h4>
+        </div>
+        <div>
+          <p>Apenas uma fatia de Banoffe</p>
+        </div>
+        <div class="preco" data-test="item-price">R$ 10,90</div>
+      </div>
+    </div>
+  </div>
+  <div class="rodape">
+    <button onclick="fecharPedido()" data-test="order-btn" disabled>
+      Selecione os 3 itens para fechar o pedido
+    </button>
+  </div>
+  <div class="confirmacao escondido" data-test="confirm-order-modal">
+    <div class="resumo">
+      <p><strong>Confirme seu pedido</strong></p>
+      <ul></ul>
+      <div>
+        <button data-test="confirm-order-btn" onclick="enviarPedido()">Tudo Certo, pode pedir!</button>
+        <a data-test="cancel-order-btn" onclick="cancelar()"> Cancelar </a>
+      </div>
+    </div>
+  </div>
+  <script src="script.js"></script>
+</body>
+
 </html>
